@@ -1,0 +1,91 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "idProperty": "ID",
+        "designer|userClassName": "Customer"
+    },
+    "designerId": "3df760e4-2c11-4237-9470-b4e6e3072c4f",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ID",
+                "type": "int"
+            },
+            "designerId": "a779271a-92af-41e0-8c8f-e3213b77ea90"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Name"
+            },
+            "designerId": "28a530b8-fad5-46ef-bf7b-69b53796b516"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Address"
+            },
+            "designerId": "50144531-f2da-4bda-9901-646bcde9244a"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "Name",
+                "field": "Name"
+            },
+            "designerId": "fc79a364-3c21-403f-b599-084575df68a8"
+        },
+        {
+            "type": "presencevalidation",
+            "reference": {
+                "name": "validations",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "Address",
+                "field": "Address"
+            },
+            "designerId": "239c13ad-5908-4fea-9beb-72c6fd74bfe4"
+        },
+        {
+            "type": "Ext.data.proxy.Rest",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "customer.php",
+                "appendId": false
+            },
+            "designerId": "4759d6c8-05b8-4843-a61a-fdc00bb47aa2"
+        }
+    ]
+}

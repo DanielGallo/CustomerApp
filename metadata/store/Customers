@@ -1,0 +1,85 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "Customer",
+        "storeId": "Customers",
+        "designer|userClassName": "Customers"
+    },
+    "designerId": "6a9a80d8-f479-4982-8f69-c69e3e5ce067",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "customer.php"
+            },
+            "designerId": "64be4a37-cc86-428e-a22c-41bc0e7cddd7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "designerId": "30b2c3b5-b502-446d-ab26-5728e4f82e3d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "3cd24439-eb97-481e-803c-6fcd12bfe676",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "groupFn",
+                        "designer|params": [
+                            "item"
+                        ],
+                        "implHandler": [
+                            "var grouping = item.get(\"Name\")[0].toString();",
+                            "return grouping.toUpperCase();"
+                        ]
+                    },
+                    "designerId": "0443394b-c638-4fd2-8476-a206a5ec12a1"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Sorter",
+            "reference": {
+                "name": "sorters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "Name"
+            },
+            "designerId": "e3362128-c77d-4773-8786-22b2aa1bac46"
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CustomerDetail",
+        "designer|userAlias": "customerdetail"
+    },
+    "designerId": "b200c427-8f6f-4f6b-ae94-51e447c85025",
+    "cn": [
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "95cafa97-5668-4782-8d91-f53b31637b4f"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Details",
+                "iconCls": "compose"
+            },
+            "designerId": "2f023cc6-71b8-4170-a7c9-93351256b817",
+            "masterInstanceId": "42758548-07b4-4758-be4f-6b5356628935"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Orders",
+                "iconCls": "organize"
+            },
+            "designerId": "5413f6d2-0607-455b-9ca8-53c6f8846974",
+            "masterInstanceId": "c9812d1a-a115-447f-8c91-4a93ae64c069"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Map",
+                "iconCls": "maps"
+            },
+            "designerId": "4b96cbe1-0ec1-416f-8b34-60831ebb19c5",
+            "masterInstanceId": "abd76a00-84e8-41a7-b429-e50cb9774697"
+        }
+    ]
+}

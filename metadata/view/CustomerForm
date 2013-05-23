@@ -1,0 +1,118 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CustomerForm",
+        "designer|userAlias": "customerform"
+    },
+    "designerId": "42758548-07b4-4758-be4f-6b5356628935",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": null
+            },
+            "designerId": "32756238-2ec0-4c5e-a7d5-c1ab8d7c6fd6",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Name",
+                        "name": "Name"
+                    },
+                    "designerId": "bcd9fd5e-149f-44cb-ab39-1c244856603e"
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Address",
+                        "name": "Address"
+                    },
+                    "designerId": "5e77adc0-a8cb-44c9-b187-8cd5ec270c94"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaults": [
+                    "{",
+                    "    margin: 6",
+                    "}"
+                ],
+                "layout": "hbox"
+            },
+            "designerId": "b8e922fd-6eb4-47fe-97ab-76f717dd10ea",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "action": "Save",
+                        "ui": "confirm",
+                        "text": "Save"
+                    },
+                    "designerId": "f6bfe761-fba9-42c2-bba4-b01d3a028a61",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "action": "Delete",
+                        "ui": "decline",
+                        "text": "Delete"
+                    },
+                    "designerId": "1d9c93e5-e421-42c9-bee8-13d3517585a5",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

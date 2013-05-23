@@ -1,0 +1,71 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Customer",
+            "CustomerOrder"
+        ],
+        "stores": [
+            "Customers",
+            "CustomerOrders"
+        ],
+        "views": [
+            "MainView",
+            "CustomerList",
+            "CustomerDetail",
+            "CustomerForm",
+            "CustomerChart",
+            "CustomerMap"
+        ],
+        "controllers": [
+            "Customer"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var cssPath = \"sencha-touch.css\",",
+                    "    cssInclude = document.createElement(\"link\"),",
+                    "    disableDefaultTheme = true;",
+                    "",
+                    "if (Ext.os.is(\"BlackBerry\")) {",
+                    "    cssPath = \"bb10.css\";",
+                    "} else if (Ext.os.is(\"Android\")) {",
+                    "    cssPath = \"android.css\";",
+                    "} else if (Ext.os.is(\"Windows\") && Ext.browser.is(\"IE10\")) {",
+                    "    cssPath = \"wp.css\";",
+                    "} else {",
+                    "    disableDefaultTheme = false;",
+                    "}",
+                    "",
+                    "// The app is being run on BlackBerry, Android or Windows (IE10) so disable the default iOS theme",
+                    "if (disableDefaultTheme) {",
+                    "    document.styleSheets[0].disabled = true;",
+                    "}",
+                    "",
+                    "cssInclude.setAttribute(\"rel\", \"stylesheet\");",
+                    "cssInclude.setAttribute(\"type\", \"text/css\");",
+                    "cssInclude.setAttribute(\"href\", \"css/\" + cssPath);",
+                    "",
+                    "document.getElementsByTagName(\"head\")[0].appendChild(cssInclude);"
+                ]
+            },
+            "designerId": "6b883998-b1a3-42ed-a41a-38d17ab81ca0"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainView",
+        "designer|userAlias": "mainview",
+        "designer|initialView": true
+    },
+    "designerId": "300ec747-e739-41d8-8014-d1868f8d32de",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top"
+            },
+            "designerId": "74d121c8-9e19-4ed2-a2dd-ba3949832759",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "action": "Add",
+                        "hideAnimation": "fadeOut",
+                        "showAnimation": "fadeIn",
+                        "iconCls": "add",
+                        "text": null
+                    },
+                    "designerId": "7ecb00cd-5474-452e-8cee-b6348da586ac",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "action",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Customers"
+            },
+            "designerId": "c27c6ee6-0591-415e-ad1a-55002bdc4d66",
+            "masterInstanceId": "8216d30b-d2e4-4445-9df5-5e7c938186bf"
+        }
+    ]
+}

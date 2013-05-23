@@ -1,0 +1,147 @@
+{
+    "name": "Customers",
+    "settings": {
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "urlPrefix": "http://localhost/customers/",
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 971,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000501,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "82655024-6cde-4ab8-bb36-0e9fbbfe346e": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "6a9a80d8-f479-4982-8f69-c69e3e5ce067": {
+            "paths": [
+                "metadata/store/Customers",
+                "app/store/override/Customers.js",
+                "app/store/Customers.js"
+            ],
+            "className": "Customers"
+        },
+        "3df760e4-2c11-4237-9470-b4e6e3072c4f": {
+            "paths": [
+                "metadata/model/Customer",
+                "app/model/override/Customer.js",
+                "app/model/Customer.js"
+            ],
+            "className": "Customer"
+        },
+        "86f12d76-4875-4dc1-9aae-662b73ff916c": {
+            "paths": [
+                "metadata/model/CustomerOrder",
+                "app/model/override/CustomerOrder.js",
+                "app/model/CustomerOrder.js"
+            ],
+            "className": "CustomerOrder"
+        },
+        "300ec747-e739-41d8-8014-d1868f8d32de": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js"
+            ],
+            "className": "MainView"
+        },
+        "8216d30b-d2e4-4445-9df5-5e7c938186bf": {
+            "paths": [
+                "metadata/view/CustomerList",
+                "app/view/override/CustomerList.js",
+                "app/view/CustomerList.js"
+            ],
+            "className": "CustomerList"
+        },
+        "b200c427-8f6f-4f6b-ae94-51e447c85025": {
+            "paths": [
+                "metadata/view/CustomerDetail",
+                "app/view/override/CustomerDetail.js",
+                "app/view/CustomerDetail.js"
+            ],
+            "className": "CustomerDetail"
+        },
+        "42758548-07b4-4758-be4f-6b5356628935": {
+            "paths": [
+                "metadata/view/CustomerForm",
+                "app/view/override/CustomerForm.js",
+                "app/view/CustomerForm.js"
+            ],
+            "className": "CustomerForm"
+        },
+        "c9812d1a-a115-447f-8c91-4a93ae64c069": {
+            "paths": [
+                "metadata/view/CustomerChart",
+                "app/view/override/CustomerChart.js",
+                "app/view/CustomerChart.js"
+            ],
+            "className": "CustomerChart"
+        },
+        "abd76a00-84e8-41a7-b429-e50cb9774697": {
+            "paths": [
+                "metadata/view/CustomerMap",
+                "app/view/override/CustomerMap.js",
+                "app/view/CustomerMap.js"
+            ],
+            "className": "CustomerMap"
+        },
+        "4ec2e51f-f3c2-4754-ac27-92c095ed8528": {
+            "paths": [
+                "metadata/store/CustomerOrders",
+                "app/store/override/CustomerOrders.js",
+                "app/store/CustomerOrders.js"
+            ],
+            "className": "CustomerOrders"
+        },
+        "807a0d26-5624-4bdc-8936-abe534539381": {
+            "paths": [
+                "metadata/controller/Customer",
+                "app/controller/override/Customer.js",
+                "app/controller/Customer.js"
+            ],
+            "className": "Customer"
+        },
+        "517891f8-bb58-46c7-8e6f-98d28343af9d": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "300ec747-e739-41d8-8014-d1868f8d32de",
+            "8216d30b-d2e4-4445-9df5-5e7c938186bf",
+            "b200c427-8f6f-4f6b-ae94-51e447c85025",
+            "42758548-07b4-4758-be4f-6b5356628935",
+            "c9812d1a-a115-447f-8c91-4a93ae64c069",
+            "abd76a00-84e8-41a7-b429-e50cb9774697"
+        ],
+        "store": [
+            "6a9a80d8-f479-4982-8f69-c69e3e5ce067",
+            "4ec2e51f-f3c2-4754-ac27-92c095ed8528"
+        ],
+        "controller": [
+            "807a0d26-5624-4bdc-8936-abe534539381"
+        ],
+        "model": [
+            "3df760e4-2c11-4237-9470-b4e6e3072c4f",
+            "86f12d76-4875-4dc1-9aae-662b73ff916c"
+        ],
+        "resource": [
+            "82655024-6cde-4ab8-bb36-0e9fbbfe346e",
+            "517891f8-bb58-46c7-8e6f-98d28343af9d"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

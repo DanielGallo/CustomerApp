@@ -1,0 +1,85 @@
+{
+    "type": "Ext.chart.CartesianChart",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CustomerChart",
+        "designer|userAlias": "customerchart",
+        "colors": [
+            "[\"#115fa6\", \"#94ae0a\", \"#a61120\", \"#ff8809\", \"#ffd13e\", \"#a61187\", \"#24ad9a\", \"#7c7474\", \"#a66111\"]"
+        ],
+        "store": "CustomerOrders"
+    },
+    "designerId": "c9812d1a-a115-447f-8c91-4a93ae64c069",
+    "isBuiltIn": true,
+    "iconCls": "icon-bar-chart",
+    "autoName": "MyBarChart",
+    "cn": [
+        {
+            "type": "Ext.chart.axis.Category",
+            "reference": {
+                "name": "axes",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fields": [
+                    "Date"
+                ],
+                "grid": null,
+                "title": "Month"
+            },
+            "designerId": "6274d0b8-67e9-4ab1-9a78-9dca172506ba"
+        },
+        {
+            "type": "Ext.chart.axis.Numeric",
+            "reference": {
+                "name": "axes",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fields": [
+                    "Total"
+                ],
+                "grid": [
+                    "{",
+                    "    odd: {",
+                    "        fill: '#e8e8e8'",
+                    "    }",
+                    "}"
+                ],
+                "position": "left",
+                "title": "Total Order Value ($)"
+            },
+            "designerId": "d264419f-75bc-4cd1-959c-ee8a80064405"
+        },
+        {
+            "type": "Ext.chart.series.Bar",
+            "reference": {
+                "name": "series",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "xField": "Date",
+                "yField": [
+                    "Total"
+                ]
+            },
+            "designerId": "cffe78b0-b419-448e-a138-4b578f79919c"
+        },
+        {
+            "type": "Ext.chart.interactions.PanZoom",
+            "reference": {
+                "name": "interactions",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "a1e18073-b1bb-4b4e-8823-a47f78fd4b81"
+        }
+    ]
+}

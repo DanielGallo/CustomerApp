@@ -1,0 +1,42 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "CustomerOrder",
+        "storeId": "CustomerOrders",
+        "designer|userClassName": "CustomerOrders"
+    },
+    "designerId": "4ec2e51f-f3c2-4754-ac27-92c095ed8528",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "order.php"
+            },
+            "designerId": "9c6607f6-3340-4712-929f-5e4b7260f49e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "designerId": "b4ef1420-6ef3-4331-8355-ed0e0a414e82"
+                }
+            ]
+        }
+    ]
+}

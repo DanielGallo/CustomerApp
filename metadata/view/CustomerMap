@@ -1,0 +1,16 @@
+{
+    "type": "Ext.Map",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CustomerMap",
+        "designer|userAlias": "customermap",
+        "mapOptions": [
+            "{ zoom: 14 }"
+        ]
+    },
+    "designerId": "abd76a00-84e8-41a7-b429-e50cb9774697"
+}
